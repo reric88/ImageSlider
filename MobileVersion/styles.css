@@ -56,6 +56,12 @@ body {
   font-size: 40px;
 }
 
+.left-slide h1, .left-slide p {
+    margin-right: 20%;
+    text-align: center;
+
+}
+
 .right-slide {
   height: 100%;
   position: absolute;
@@ -75,7 +81,7 @@ body {
   color: #aaa;
   cursor: pointer;
   font-size: 20px;
-  padding: 20px 20px;
+  padding: 20px 25px;
 }
 
 .slider-button:hover {
@@ -89,7 +95,7 @@ body {
 .main-slider-container .slider-action-buttons button {
   position: absolute;
   right: 10px;
-  top: 10px;
+  bottom: 91%;
   z-index: 100;
 }
 
