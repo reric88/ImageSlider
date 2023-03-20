@@ -8,6 +8,7 @@
 }
 
 body {
+    width: 100vw;
     height: 100vh;
     /* display: flex;
     flex-direction: column;
@@ -19,8 +20,8 @@ body {
 .container {
     position: relative;
     overflow: hidden;
-    width: 100vw;
-    height: 800px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -78,9 +79,9 @@ body {
 }
 
 .right-slide > div {
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: contain;
-    background-position: center center;
+    background-position: center center; */
     height: 100%;
     width: 100%;
 }
@@ -155,48 +156,26 @@ button:focus {
 }
 
 .slide {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    border: 5px solid lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: 90% 40%;
+    background-position: 50% 37%;
 }
 
-.bgblur {
-    position: absolute;
-    /* border: 5px solid blue; */
-    margin-top: 30%;
-    height: 55%;
-    width: 100%;
-    background-image: url(./../Images/flower.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
 .blur {
-    position: relative;
-    /* margin-top: 10%; */
+    position: absolute;
     height: 100%;
     width: 100%;
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    backdrop-filter: blur(25px);
 }
 
-
-.flowerbg {
-    background-image: url(./../Images/flower.jpg);
+.fg {
     position: absolute;
-    /* border: 5px solid blue; */
-    /* margin-top: -10%; */
-    height: 70%;
+    left: 5%;
+    top: 27%;
+    height: 28%;
     width: 90%;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
