@@ -47,13 +47,13 @@ const slidesLength = slideRight.querySelectorAll('.slide').length;
 console.log(slidesLength);
 let activeSlideIndex = 0;
 
-slideLeft.style.top = `-${(slidesLength - 1)}vh`;
+slideLeft.style.top = `${(slidesLength - 1)}`;
 
 upButton.addEventListener('click', () => changeSlide('up'));
 downButton.addEventListener('click', () => changeSlide('down'));
 
 const changeSlide = (direction) => {
-const sliderHeightT = -(sliderContainer1.clientHeight);
+const sliderHeightT = sliderContainer1.clientHeight;
 const sliderHeightB = sliderContainer2.clientHeight;
 // const sliderHeight = sliderContainer.clientHeight;
 if(direction === 'up') {
@@ -68,7 +68,7 @@ if(direction === 'up') {
     }
 }
 slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeightB}px)`
-slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeightT}px)`
+slideLeft.style.transform = `translateY(-${activeSlideIndex * sliderHeightT}px)`
 // slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeightB}px)`
 // slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeightT}px)`
 }

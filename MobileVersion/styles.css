@@ -8,7 +8,7 @@
 }
 
 body {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     /* display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@ body {
 
 .slider-container1 {
     position: absolute;
+    /* position: relative; */
     overflow: hidden;
     width: 100%;
     height: 20%;
@@ -47,17 +48,19 @@ body {
     height: 100%;
     width: 100%;
     /* position: absolute; */
+    /* overflow: hidden; */
     transition: transform 500ms ease;
     z-index: 50;
 }
 
 .left-slide > div {
+    /* position: absolute; */
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    /* align-items: center; */
+    /* padding-left: 20px; */
+    align-items: center;
     justify-content: center;
     color: white;
 
@@ -70,7 +73,7 @@ body {
 
 .right-slide {
     height: 100%;
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
     width: 100%;
     transition: transform 500ms ease;
