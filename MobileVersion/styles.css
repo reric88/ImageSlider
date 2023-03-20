@@ -1,184 +1,159 @@
-
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    /* width: 100vw; */
-    height: 100vh;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0; */
+  width: 100vw;
+  height: 100vh;
 }
-.container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+
+.main-slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-container1 {
-    position: absolute;
-    /* position: relative; */
-    overflow: hidden;
-    width: 100%;
-    height: 20%;
-    display: flex;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 20%;
+  display: flex;
 }
 
 .slider-container2 {
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    display: flex;
-
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .left-slide {
-    height: 100%;
-    width: 100%;
-    /* position: absolute; */
-    /* overflow: hidden; */
-    transition: transform 500ms ease;
-    z-index: 50;
+  height: 100%;
+  width: 100%;
+  transition: transform 500ms ease;
+  z-index: 50;
 }
 
 .left-slide > div {
-    /* position: absolute; */
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* padding-left: 20px; */
-    align-items: center;
-    justify-content: center;
-    color: white;
-
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .left-slide h1 {
-    font-size: 40px;
-
+  font-size: 40px;
 }
 
 .right-slide {
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    transition: transform 500ms ease;
-    /* border: 5px solid red; */
-
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: transform 500ms ease;
 }
 
 .right-slide > div {
-    /* background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center; */
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
-button {
-    background-color: white;
-    border: none;
-    color: #aaa;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 20px 20px;
+.slider-button {
+  background-color: white;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 20px 20px;
 }
 
-button:hover {
-    color: #222;
+.slider-button:hover {
+  color: #222;
 }
 
-button:focus {
-    outline: none;
+.slider-button:focus {
+  outline: none;
 }
 
-.container .action-buttons button {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 100;
+.main-slider-container .slider-action-buttons button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
 }
 
-
-.container .action-buttons .down-button {
-    border-radius: 5px;
-    transform: translateY(120%);
+.main-slider-container .slider-action-buttons .slider-down-button {
+  border-radius: 5px;
+  transform: translateY(120%);
 }
 
-.container .action-buttons .up-button {
-    border-radius: 5px;
-    /* transform: translatey(-100%); */
+.main-slider-container .slider-action-buttons .slider-up-button {
+  border-radius: 5px;
 }
 
 .bg-nature {
-    background-color: #fd3555;
+  background-color: #fd3555;
 }
 
 .bg-sky {
-    background-color: #2a86ba;
+  background-color: #2a86ba;
 }
 
 .bg-castle {
-    background-color: #252e33;
+  background-color: #252e33;
 }
 
 .bg-eagle {
-    background-color: #ffb866;
+  background-color: #ffb866;
 }
 
 .flower {
-    background-image: url(./../Images/flower.jpg);
+  background-image: url(./../Images/flower.jpg);
 }
 
-
-
 .sky {
-    background-image: url(./../Images/sky.jpg);
+  background-image: url(./../Images/sky.jpg);
 }
 
 .castle {
-    background-image: url(./../Images/castle.jpg);
+  background-image: url(./../Images/castle.jpg);
 }
 
 .eagle {
-    background-image: url(./../Images/eagle.jpg);
+  background-image: url(./../Images/eagle.jpg);
 }
 
 .slide {
-    background-repeat: no-repeat;
-    background-size: 90% 40%;
-    background-position: 50% 37%;
+  background-repeat: no-repeat;
+  background-size: 90% 40%;
+  background-position: 50% 37%;
 }
 
-
 .blur {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(25px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(25px);
 }
 
 .fg {
-    position: absolute;
-    left: 5%;
-    top: 27%;
-    height: 28%;
-    width: 90%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+  position: absolute;
+  left: 5%;
+  top: 27%;
+  height: 28%;
+  width: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
