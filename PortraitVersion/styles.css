@@ -1,0 +1,155 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0; */
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-container1 {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.slider-container2 {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.left-slide {
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    transition: transform 500ms ease;
+    z-index: 50;
+}
+
+.left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+
+}
+
+.left-slide h1 {
+    font-size: 40px;
+
+}
+
+.right-slide {
+    height: 100%;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    transition: transform 500ms ease;
+    /* border: 5px solid red; */
+
+}
+
+.right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container .action-buttons button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+}
+
+
+.container .action-buttons .down-button {
+    border-radius: 5px;
+    transform: translateY(120%);
+}
+
+.container .action-buttons .up-button {
+    border-radius: 5px;
+    /* transform: translatey(-100%); */
+}
+
+.bg-nature {
+    background-color: #fd3555;
+}
+
+.bg-sky {
+    background-color: #2a86ba;
+}
+
+.bg-castle {
+    background-color: #252e33;
+}
+
+.bg-eagle {
+    background-color: #ffb866;
+}
+
+.flower {
+    background-image: url(./../Images/flower.jpg);
+}
+
+.sky {
+    background-image: url(./../Images/sky.jpg);
+}
+
+.castle {
+    background-image: url(./../Images/castle.jpg);
+}
+
+.eagle {
+    background-image: url(./../Images/eagle.jpg);
+}
+
+

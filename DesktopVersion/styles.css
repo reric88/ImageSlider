@@ -121,19 +121,19 @@ button:focus {
 }
 
 .flower {
-    background-image: url(./Images/flower.jpg);
+    background-image: url(./../Images/flower.jpg);
 }
 
 .sky {
-    background-image: url(./Images/sky.jpg);
+    background-image: url(./../Images/sky.jpg);
 }
 
 .castle {
-    background-image: url(./Images/castle.jpg);
+    background-image: url(./../Images/castle.jpg);
 }
 
 .eagle {
-    background-image: url(./Images/eagle.jpg);
+    background-image: url(./../Images/eagle.jpg);
 }
 
 
